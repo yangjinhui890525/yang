@@ -1,0 +1,26 @@
+<html>
+	<head>
+		
+		<script type="text/javascript" charset="utf-8" src="kindeditor.js"></script>
+		<script type="text/javascript" charset="utf-8" src="jquery-1.3.1.js"></script>
+		
+
+	</head>
+	<body>
+		<div>
+		<textarea id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
+		</div>
+		<button value="html value" onclick="getValue()">html value</button>
+	</body>
+<script type="text/javascript">
+
+    var editor = null;
+    KindEditor.ready(function () {
+        editor = KindEditor.create("#editor_id");
+    });
+	function getValue()
+	{
+		alert(editor.html());
+	}
+</script>
+</html>
